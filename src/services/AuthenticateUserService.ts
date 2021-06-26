@@ -15,7 +15,7 @@ class AuthenticateUserService {
     const user = await usersRepositories.findOne({ email })
 
     if (!user) {
-      throw new Error('Email/password incorrect.')
+      throw new Error('Email/Password incorrect.')
     }
 
     //Verificar se a senha está correta

@@ -12,6 +12,7 @@ export function ensureAuthenticated(
 ) {
   // Receber token
   const authToken = req.headers.authorization
+
   // Validar se token preenchido
   if (!authToken) {
     return res.status(401).json({ message: 'Token is missing' })

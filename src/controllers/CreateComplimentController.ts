@@ -1,4 +1,4 @@
-import { Request, response, Response } from 'express'
+import { Request, Response } from 'express'
 import { CreateComplimentService } from '../services/CreateComplimentService'
 
 class CreateComplimentController {
@@ -12,7 +12,7 @@ class CreateComplimentController {
       user_sender: user_id,
       message,
     })
-    return response.json(compliment)
+    return res.json(compliment)
   }
 }
 
